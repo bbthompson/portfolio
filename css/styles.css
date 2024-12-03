@@ -1,0 +1,253 @@
+/* General Styles */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+ }
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #24265d;
+    margin: 0 auto;
+    max-width: 1900px; 
+    background-color: #232456;
+}
+
+h1, h2 { 
+    font-family: "Oswald", sans-serif;
+    text-shadow: 1px 2px 2px #6666b0;
+    font-weight: 700;
+    font-stretch: expanded;
+}
+
+.rounded-20 {
+    border-radius: 20px;
+}
+
+.navy-background {
+    background-color: #24265d;
+    color: #fff;
+}
+
+.navy-text {
+    color: #24265d;
+}
+
+.btn:hover {
+    background-color: #585aa4;
+    color: white;
+}
+
+.bg-light-thistle {
+    background-color: #b4b4d5;
+}
+
+.bg-lighter-thistle {
+    background-color: #E6E6FA;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #e5e5f0;
+}
+
+.bg-lightest-thistle {
+    background-color: #e5e5f0;
+}
+
+.header-text p {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+header img {
+    height: 90px;
+    width: auto;
+}
+
+@media screen and (max-width: 500px) {
+    
+    header img {
+        max-height: 75px;
+        width: auto;
+    }
+
+}
+
+@supports (grid-area: auto) {
+    @media screen and (min-width: 650px) {
+
+        header {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 30px;
+            padding: 2% 0;
+        }
+
+        .header-text {
+            justify-self: start;
+        }
+
+        .header-image {
+            justify-self: end;
+        }
+
+        header img {
+            
+            max-height: 250px;
+        }
+        
+    }
+}
+
+/* Navigation */
+
+.dropdown-item:hover, .dropdown-item:active, .nav-link:hover {
+    color: #161cde;
+}
+
+.dropdown-item:active {
+    background-color: #FBFBFB;
+}
+
+.nav-item {
+    color: #24265d;
+}
+
+/* Home Page */
+.watercolor-image {
+    max-width: 250px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .watercolor-image {
+        max-width: 500px;
+    }
+
+    .intro-text p {
+        font-size: 1.2em;
+    }
+}
+
+/* Contact */
+
+.circle-image {
+    height: 100px;
+    width: 100px;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+}
+
+.email-link:hover, .email-link:active {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 650px) {
+
+    #contact {
+        background: url(../images/ramiro-mendes-CjS3QsRuxnE-unsplash.jpg) no-repeat;
+        background-size: cover;
+        padding: 1px;
+    }
+
+
+    .contact-text {
+        margin: 2% 20%;
+        border-radius: 10px;
+    }
+}
+
+
+/* About */
+.about-btn {
+    background-color: #24265d;
+    color: #fff;
+    max-width: 200px;
+}
+
+.about-heading {
+    font-size: 2.2em;
+}
+
+/* About - Experience */
+
+#experience {
+    background-color: #E6E6FA;
+}
+
+
+@media screen and (max-width: 500px) {
+    .experience_image {
+        max-width: 250px;
+    }
+}
+
+.image-500 {
+    max-width: 400px;
+}
+@media screen and (min-width: 501px) and (max-width: 767px) {
+    .experience_image {
+        max-width: 400px;
+    }
+}
+
+/* About - Skills */
+.skills-wrapper img {
+    display: block;
+    max-width: 100px;
+    border-radius: 4px;
+}
+
+@supports (grid-area: auto) {
+    .skills-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+@supports (grid-area: auto) {
+
+    @media screen and (min-width: 500px) {
+        
+        .skills-wrapper {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .skills-wrapper img {
+        max-width: 80%;
+    }
+
+}
+
+
+
+/* FOOTER
+------------------------------------*/
+footer {
+    padding: 3%;
+    background-color: #e5e5f0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #24265d;
+}
+
+.socials img:hover {
+    opacity: 0.5;
+}
+
